@@ -1,0 +1,69 @@
+@use "../abstracts/variables" as *;
+
+.bookings {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    // gap: 20px;
+    row-gap: 20px;
+
+    &__body {
+        background-color: $color-bg-paper;
+        border-radius: $border-radius-primary;
+        padding: 1.5em 1em;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    &__header {
+        width: 100%;
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+
+    &__footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+
+        &--info {
+            p {
+                color: $color-txt-primary;
+                font-weight: 100;
+                text-wrap: nowrap;
+                font-size: 15px;
+            }
+
+            span {
+                color: $color-white;
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+
+        &--pagination {
+            display: flex;
+            align-items: center;
+            column-gap: 0.5rem;
+
+            &--pages {
+                display: flex;
+                align-items: center;
+                column-gap: 0.5rem;
+            }
+        }
+    }
+}

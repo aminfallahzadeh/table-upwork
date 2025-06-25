@@ -1,0 +1,12 @@
+@use "base/base";
+@use "base/main";
+
+@use "components/sidebar";
+@use "components/header";
+@use "components/bookings";
+@use "components/button";
+@use "components/table";
+
+@use "abstracts/variables";
+
+@use "pages/error";

@@ -1,0 +1,39 @@
+@use "../abstracts/variables" as *;
+
+.table {
+    width: 100%;
+    display: table;
+    min-width: 100%;
+    border-collapse: collapse;
+    border: 1px solid $color-border;
+
+    &__wrapper {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 15px;
+
+        padding-bottom: 10px;
+    }
+
+    &__header {
+        background-color: $color-bg;
+        padding: 10px;
+        border: 1px solid $color-border;
+    }
+
+    &__row {
+        text-align: center;
+    }
+
+    &__cell {
+        border: 1px solid $color-border;
+        padding: 0.9rem 0.7rem;
+        font-weight: 200;
+        font-size: 0.8rem;
+        color: $color-txt-primary;
+    }
+}

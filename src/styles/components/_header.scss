@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 15px;
+
+        &--icon {
+            background-color: $color-bg-paper;
+            padding: 5px;
+            border-radius: $border-radius-primary;
+        }
+
+        h2 {
+            color: $color-txt-primary;
+            font-weight: 400;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+
+        &--download {
+            border: 1px solid $color-txt-primary;
+            padding: 3px 7px;
+            border-radius: 8px;
+        }
+
+        & > * {
+            cursor: pointer;
+        }
+    }
+}

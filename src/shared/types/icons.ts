@@ -1,0 +1,16 @@
+export type IconNames =
+  | "doubleChevronLeft"
+  | "doubleChevronRight"
+  | "vector"
+  | "menu"
+  | "user"
+  | "gear"
+  | "docs"
+  | "news"
+  | "group"
+  | "sun"
+  | "download"
+  | "chevronDown"
+  | "search"
+  | "edit"
+  | "chevronRight";

@@ -1,0 +1,3 @@
+// IMPORTS
+
+export const Table = () => {};
