@@ -31,6 +31,7 @@ export const ROUTES: AppRoute[] = [
     children: [
       {
         id: 100,
+        path: BASE_URL,
         element: createSuspense(Home),
         index: true,
         handle: { title: "Home" },
